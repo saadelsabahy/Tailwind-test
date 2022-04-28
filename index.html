@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/main.css" />
+		<title>Tailwind Test</title>
+	</head>
+
+	<body>
+		<!-- start navBar -->
+		<nav
+			class="relative bg-[url('/images/bg-tablet-pattern.svg')] bg-no-repeat bg-right-top bg-clip-content bg-origin-content"
+		>
+			<div
+				class="container mx-auto p-6 h-full flex justify-between items-center z-40"
+			>
+				<!-- nav brand -->
+				<div class="navbar-brand h-full flex items-center">
+					<a href="index.html">
+						<img src="./images/logo.svg" alt="logo" />
+					</a>
+				</div>
+				<!-- nav links -->
+
+				<ul class="hidden md:flex items-center space-x-4 capitalize">
+					<li>
+						<a class="hover:text-darkGrayishBlue" href="#pricing"
+							>pricing</a
+						>
+					</li>
+					<li>
+						<a class="hover:text-darkGrayishBlue" href="#product"
+							>product</a
+						>
+					</li>
+					<li>
+						<a class="hover:text-darkGrayishBlue" href="#aboutus"
+							>aboutus
+						</a>
+					</li>
+					<li>
+						<a class="hover:text-darkGrayishBlue" href="#career"
+							>career
+						</a>
+					</li>
+					<li>
+						<a class="hover:text-darkGrayishBlue" href="#community"
+							>community
+						</a>
+					</li>
+				</ul>
+
+				<!-- navbar -->
+
+				<a
+					href="#started"
+					class="hidden md:block bg-brightRed hover:bg-brightRedLight baseline text-white p-3 px-6 pt-2 rounded-full capitalize"
+				>
+					<span class="text-white"> get started </span>
+				</a>
+			</div>
+
+			<!-- <img
+				class="absolute -top-10 -right-11 z-10 object-contain"
+				src="./images/bg-tablet-pattern.svg"
+				alt="bg"
+			/> -->
+		</nav>
+
+		<!-- end navBar -->
+
+		<!-- start  hero-->
+		<section
+			class="hero grid sm:grid-cols-1 md:grid-cols-2 gap-4 container mx-auto p-6"
+		>
+			<div
+				class="hero_left space-y-12 sm:order-last md:order-first flex flex-col justify-center sm:items-center md:items-start"
+			>
+				<h1 class="max-w-md text-4xl text-darkBlue font-bold">
+					Bring everyone together to build better products
+				</h1>
+				<p class="max-w-sm">
+					Manage makes it simple for software teams to plan day-to-day
+					tasks while keeping the larger team goals in view.
+				</p>
+				<a
+					href="#started"
+					class="bg-brightRed hover:bg-brightRedLight baseline text-white p-3 px-6 pt-2 rounded-full capitalize"
+				>
+					<span class="text-white"> get started </span>
+				</a>
+			</div>
+
+			<div class="hero_right">
+				<img
+					class="w-full h-full bg-contain"
+					src="./images/illustration-intro.svg"
+					alt="hero"
+				/>
+			</div>
+		</section>
+		<!-- end  hero-->
+	</body>
+</html>
