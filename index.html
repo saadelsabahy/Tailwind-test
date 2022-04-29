@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/main.css" />
-		<title>Tailwind Test</title>
-	</head>
 
-	<body>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/main.css" />
+	<title>Tailwind Test</title>
+</head>
+
+<body class="overflow-x-hidden">
+	<div class="relative overflow-hidden">
+		<img class="absolute -top-32 -right-36 -z-50 object-contain" src="./images/bg-tablet-pattern.svg" alt="bg" />
 		<!-- start navBar -->
-		<nav
-			class="relative bg-[url('/images/bg-tablet-pattern.svg')] bg-no-repeat bg-right-top bg-clip-content bg-origin-content"
-		>
-			<div
-				class="container mx-auto p-6 h-full flex justify-between items-center z-40"
-			>
+		<nav class="relative">
+			<div class="container mx-auto p-6 h-full flex justify-between items-center">
 				<!-- nav brand -->
 				<div class="navbar-brand h-full flex items-center">
 					<a href="index.html">
@@ -26,38 +25,29 @@
 
 				<ul class="hidden md:flex items-center space-x-4 capitalize">
 					<li>
-						<a class="hover:text-darkGrayishBlue" href="#pricing"
-							>pricing</a
-						>
+						<a class="hover:text-darkGrayishBlue" href="#pricing">pricing</a>
 					</li>
 					<li>
-						<a class="hover:text-darkGrayishBlue" href="#product"
-							>product</a
-						>
+						<a class="hover:text-darkGrayishBlue" href="#product">product</a>
 					</li>
 					<li>
-						<a class="hover:text-darkGrayishBlue" href="#aboutus"
-							>aboutus
+						<a class="hover:text-darkGrayishBlue" href="#aboutus">aboutus
 						</a>
 					</li>
 					<li>
-						<a class="hover:text-darkGrayishBlue" href="#career"
-							>career
+						<a class="hover:text-darkGrayishBlue" href="#career">career
 						</a>
 					</li>
 					<li>
-						<a class="hover:text-darkGrayishBlue" href="#community"
-							>community
+						<a class="hover:text-darkGrayishBlue" href="#community">community
 						</a>
 					</li>
 				</ul>
 
 				<!-- navbar -->
 
-				<a
-					href="#started"
-					class="hidden md:block bg-brightRed hover:bg-brightRedLight baseline text-white p-3 px-6 pt-2 rounded-full capitalize"
-				>
+				<a href="#started"
+					class="hidden md:block bg-brightRed hover:bg-brightRedLight baseline text-white p-3 px-6 pt-2 rounded-full capitalize">
 					<span class="text-white"> get started </span>
 				</a>
 			</div>
@@ -72,35 +62,118 @@
 		<!-- end navBar -->
 
 		<!-- start  hero-->
-		<section
-			class="hero grid sm:grid-cols-1 md:grid-cols-2 gap-4 container mx-auto p-6"
-		>
+		<section class="hero grid sm:grid-cols-1 md:grid-cols-2 gap-4 container mx-auto p-6 sm:text-center md:text-left">
 			<div
-				class="hero_left space-y-12 sm:order-last md:order-first flex flex-col justify-center sm:items-center md:items-start"
-			>
+				class="hero_left space-y-12 sm:order-last md:order-first flex flex-col justify-center sm:items-center md:items-start">
 				<h1 class="max-w-md text-4xl text-darkBlue font-bold">
 					Bring everyone together to build better products
 				</h1>
-				<p class="max-w-sm">
+				<p class="max-w-sm text-darkGrayishBlue">
 					Manage makes it simple for software teams to plan day-to-day
 					tasks while keeping the larger team goals in view.
 				</p>
-				<a
-					href="#started"
-					class="bg-brightRed hover:bg-brightRedLight baseline text-white p-3 px-6 pt-2 rounded-full capitalize"
-				>
+				<a href="#started"
+					class="bg-brightRed hover:bg-brightRedLight baseline text-white p-3 px-6 pt-2 rounded-full capitalize">
 					<span class="text-white"> get started </span>
 				</a>
 			</div>
 
-			<div class="hero_right">
-				<img
-					class="w-full h-full bg-contain"
-					src="./images/illustration-intro.svg"
-					alt="hero"
-				/>
+			<div class="hero_right flex justify-end">
+				<img class="w-full h-full bg-cover" src="./images/illustration-intro.svg" alt="hero" />
 			</div>
 		</section>
 		<!-- end  hero-->
-	</body>
+	</div>
+
+	<!-- start AddedValue -->
+	<section class="added_value container mx-auto p-6 grid sm:grid-cols-1 gap-5 md:grid-cols-2">
+		<!-- left side  -->
+		<div class="added_value_left text-darkBlue space-y-5  sm:w-full md:w-3/4 sm:text-center md:text-left">
+			<h2 class="text-2xl font-bold">
+				What's different about Manage?
+			</h2>
+			<p class="text-darkGrayishBlue">
+				Manage provides all the functionality your team needs, without the
+            complexity. Our software is tailor-made for modern digital product
+            teams.
+			</p>
+		</div>
+		<!-- right side list -->
+		<div class="added_value_right space-y-6">
+			<!-- feature 1 -->
+			<div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+				<!-- Heading -->
+				<div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+					<div class="flex items-center space-x-2">
+						<div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">
+							01
+						</div>
+						<h3 class="text-base font-bold md:mb-4 md:hidden">
+							Track company-wide progress
+						</h3>
+					</div>
+				</div>
+
+				<div>
+					<h3 class="hidden mb-4 text-lg font-bold md:block">
+						Track company-wide progress
+					</h3>
+					<p class="text-darkGrayishBlue">
+						See how your day-to-day tasks fit into the wider vision. Go
+						from tracking progress at the milestone level all the way
+						done to the smallest of details. Never lose sight of the
+						bigger picture again.
+					</p>
+				</div>
+			</div>
+			<!-- feature 2 -->
+			<div class="flex flex-col md:flex-row md:space-x-6 space-y-3 md:space-y-0">
+				<!-- heading -->
+				<div class="space-x-2   bg-brightRedSupLight md:bg-transparent rounded-l-full">
+					<div class="flex items-center"><div class="rounded-full py-2 md:py-1 px-4 text-white bg-brightRed">
+						02
+					</div>
+					<h3 class="text-base font-bold md:mb-4 md:hidden">
+						Track company-wide progress
+					</h3></div>
+				</div>
+				<div>
+					<h3 class="text-lg font-bold hidden md:block">
+						Track company-wide progress
+					</h3>
+					<p class="text-darkGrayishBlue">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore error enim iusto accusantium fugit
+						deserunt cum. Repellendus quaerat ab laborum fugiat, ea atque exercitationem non mollitia quae
+						perspiciatis sed eius!
+					</p>
+				</div>
+			</div>
+			<!-- feature 3 -->
+			<div class="flex flex-col md:flex-row md:space-x-6 space-y-3 md:space-y-0">
+				<!-- heading -->
+				<div class="space-x-2   bg-brightRedSupLight md:bg-transparent rounded-l-full">
+					<div class="flex items-center"><div class="rounded-full py-2 md:py-1 px-4 text-white bg-brightRed">
+						02
+					</div>
+					<h3 class="text-base font-bold md:mb-4 md:hidden">
+						Track company-wide progress
+					</h3></div>
+				</div>
+				<div>
+					<h3 class="text-lg font-bold hidden md:block">
+						Track company-wide progress
+					</h3>
+					<p class="text-darkGrayishBlue">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore error enim iusto accusantium fugit
+						deserunt cum. Repellendus quaerat ab laborum fugiat, ea atque exercitationem non mollitia quae
+						perspiciatis sed eius!
+					</p>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<!-- end AddedValue -->
+</body>
+
 </html>
