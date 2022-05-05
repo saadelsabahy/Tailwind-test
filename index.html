@@ -6,12 +6,19 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="css/main.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&family=Poppins:wght@100;300;400;500;600;700;900&family=Raleway:ital,wght@0,100;0,300;0,600;1,700&display=swap"
+		rel="stylesheet">
 	<title>Tailwind Test</title>
 </head>
 
 <body>
 	<div class="relative overflow-hidden">
-		<img class="absolute sm:w-auto w-1/2 h-full sm:-top-1/4 sm:-right-1/4  md:-top-20  md:-right-11  -z-50 object-contain" src="./images/bg-tablet-pattern.svg" alt="bg" />
+		<img
+			class="absolute sm:w-auto w-1/2 h-full sm:-top-1/4 sm:-right-1/4  md:-top-20  md:-right-11  -z-50 object-contain"
+			src="./images/bg-tablet-pattern.svg" alt="bg" />
 		<!-- start navBar -->
 		<nav class="relative">
 			<div class="container mx-auto p-6 h-full flex justify-between items-center">
@@ -94,8 +101,8 @@
 			</h2>
 			<p class="text-darkGrayishBlue">
 				Manage provides all the functionality your team needs, without the
-            complexity. Our software is tailor-made for modern digital product
-            teams.
+				complexity. Our software is tailor-made for modern digital product
+				teams.
 			</p>
 		</div>
 		<!-- right side list -->
@@ -130,12 +137,14 @@
 			<div class="flex flex-col md:flex-row md:space-x-6 space-y-3 md:space-y-0">
 				<!-- heading -->
 				<div class="space-x-2   bg-brightRedSupLight md:bg-transparent rounded-l-full">
-					<div class="flex items-center"><div class="rounded-full py-2 md:py-1 px-4 text-white bg-brightRed">
-						02
+					<div class="flex items-center">
+						<div class="rounded-full py-2 md:py-1 px-4 text-white bg-brightRed">
+							02
+						</div>
+						<h3 class="text-base font-bold md:mb-4 md:hidden">
+							Track company-wide progress
+						</h3>
 					</div>
-					<h3 class="text-base font-bold md:mb-4 md:hidden">
-						Track company-wide progress
-					</h3></div>
 				</div>
 				<div>
 					<h3 class="text-lg font-bold hidden md:block">
@@ -152,12 +161,14 @@
 			<div class="flex flex-col md:flex-row md:space-x-6 space-y-3 md:space-y-0">
 				<!-- heading -->
 				<div class="space-x-2   bg-brightRedSupLight md:bg-transparent rounded-l-full">
-					<div class="flex items-center"><div class="rounded-full py-2 md:py-1 px-4 text-white bg-brightRed">
-						02
+					<div class="flex items-center">
+						<div class="rounded-full py-2 md:py-1 px-4 text-white bg-brightRed">
+							02
+						</div>
+						<h3 class="text-base font-bold md:mb-4 md:hidden">
+							Track company-wide progress
+						</h3>
 					</div>
-					<h3 class="text-base font-bold md:mb-4 md:hidden">
-						Track company-wide progress
-					</h3></div>
 				</div>
 				<div>
 					<h3 class="text-lg font-bold hidden md:block">
@@ -174,6 +185,52 @@
 		</div>
 	</section>
 	<!-- end AddedValue -->
+	<!--start testimonial -->
+	<section class="testimonial flex flex-col items-center py-10 space-y-24">
+		<h3 class="text-3xl   font-bold text-darkBlue">What they 've said</h3>
+		<div
+			class="card-container flex  flex-col md:flex-row space-x-0 space-y-10 md:space-y-0 md:space-x-5  justify-between ">
+
+			<blockquote class="card bg-veryLightGray flex flex-col items-center justify-center text-center relative text-darkGrayishBlue space-y-8 p-4">
+				<div class="avatar -mt-[50px]">
+					<img class=" w-[100px] h-[100px]  rounded-full " src="./images/avatar-anisha.png" alt="card1-avatar">
+					<span class="text-2xl text-darkBlue mt-12">user name</span>
+				</div>
+			
+					<p class="text-darkGrayishBlue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, amet est voluptatem officiis,
+						possimus asperiores ad atque illo perspiciatis necessitatibus aut eum qui quos, molestias dicta
+						veritatis nulla ut! Amet?</p>
+				
+			</blockquote>
+
+			<blockquote class="card bg-veryLightGray flex flex-col items-center justify-center text-center relative text-darkGrayishBlue space-y-8 p-4">
+				<div class="avatar -mt-[50px]">
+					<img class=" w-[100px] h-[100px]  rounded-full " src="./images/avatar-anisha.png" alt="card1-avatar">
+					<span class="text-2xl text-darkBlue mt-12">user name</span>
+				</div>
+			
+					<p class="text-darkGrayishBlue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, amet est voluptatem officiis,
+						possimus asperiores ad atque illo perspiciatis necessitatibus aut eum qui quos, molestias dicta
+						veritatis nulla ut! Amet?</p>
+				
+			</blockquote>
+
+			<blockquote class="card bg-veryLightGray flex flex-col items-center justify-center text-center relative text-darkGrayishBlue space-y-8 p-4">
+				<div class="avatar -mt-[50px]">
+					<img class=" w-[100px] h-[100px]  rounded-full " src="./images/avatar-anisha.png" alt="card1-avatar">
+					<span class="text-2xl text-darkBlue mt-12">user name</span>
+				</div>
+			
+					<p class="text-darkGrayishBlue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, amet est voluptatem officiis,
+						possimus asperiores ad atque illo perspiciatis necessitatibus aut eum qui quos, molestias dicta
+						veritatis nulla ut! Amet?</p>
+				
+			</blockquote>
+
+			
+		</div>
+	</section>
+	<!--end testimonial -->
 </body>
 
 </html>
