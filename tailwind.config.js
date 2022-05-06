@@ -1,6 +1,9 @@
 module.exports = {
 	content: ['./*.html'],
 	theme: {
+		fontFamily: {
+			body: ['Be Vietnam Pro', 'sans-serif'],
+		},
 		screens: {
 			sm: '480px',
 			md: '768px',
@@ -20,8 +23,17 @@ module.exports = {
 			},
 			backgroundImage: {
 				'hero-pattern': "url('/images/illustration-intro.svg')",
+				'body-bg': "url('./images/bg-tablet-pattern.svg')",
+				'simplify-desktop':
+					"url('/images/bg-simplify-section-desktop.svg')",
+				'simplify-mobile': "url('/images/bg-simplify-section-mobile.svg')",
 			},
 		},
 	},
-	plugins: [],
+	plugins: [
+		function ({ addVariant }) {
+			addVariant('child', '& > *');
+			addVariant('child-hover', '& > *:hover');
+		},
+	],
 };

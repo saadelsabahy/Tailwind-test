@@ -57,6 +57,11 @@
 					class="hidden md:block bg-brightRed hover:bg-brightRedLight baseline text-white p-3 px-6 pt-2 rounded-full capitalize">
 					<span class="text-white"> get started </span>
 				</a>
+				<!-- hamburger icon -->
+				<button id="menu-btn" class="hamburger block md:hidden focus:outline-none">
+					<span class="hamburger-top"></span><span class="hamburger-middle"></span><span
+						class="hamburger-bottom"></span>
+				</button>
 			</div>
 
 			<!-- <img
@@ -64,6 +69,17 @@
 				src="./images/bg-tablet-pattern.svg"
 				alt="bg"
 			/> -->
+			<!-- mobile menu -->
+			<div class="hidden transition-all duration-700" id="menu">
+				<div 
+					class="absolute flex flex-col items-center self-end py-8 mt-5 gap-6 bg-white font-bold drop-shadow-md left-6 right-6 w-auto text-darkBlue capitalize">
+					<a href="#" class="pricing">pricing</a>
+				<a href="#" class="product">product</a>
+					<a href="#" class="careers">careers</a>
+				<a href="#" class="community">community</a>
+				<a href="#" class="privacy-policy">privacy policy</a>
+				</div>
+			</div>
 		</nav>
 
 		<!-- end navBar -->
@@ -186,51 +202,152 @@
 	</section>
 	<!-- end AddedValue -->
 	<!--start testimonial -->
-	<section class="testimonial flex flex-col items-center py-10 space-y-24">
+	<section class="testimonial flex flex-col items-center py-10 space-y-16">
 		<h3 class="text-3xl   font-bold text-darkBlue">What they 've said</h3>
 		<div
 			class="card-container flex  flex-col md:flex-row space-x-0 space-y-10 md:space-y-0 md:space-x-5  justify-between ">
 
-			<blockquote class="card bg-veryLightGray flex flex-col items-center justify-center text-center relative text-darkGrayishBlue space-y-8 p-4">
-				<div class="avatar -mt-[50px]">
+			<blockquote
+				class="card bg-veryLightGray flex flex-col items-center justify-center text-center relative text-darkGrayishBlue space-y-8 p-4">
+				<div class="avatar -mt-[50px] flex flex-col gap-7">
 					<img class=" w-[100px] h-[100px]  rounded-full " src="./images/avatar-anisha.png" alt="card1-avatar">
-					<span class="text-2xl text-darkBlue mt-12">user name</span>
+					<span class="text-2xl text-darkBlue  capitalize">anisha li</span>
 				</div>
-			
-					<p class="text-darkGrayishBlue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, amet est voluptatem officiis,
-						possimus asperiores ad atque illo perspiciatis necessitatibus aut eum qui quos, molestias dicta
-						veritatis nulla ut! Amet?</p>
-				
+
+				<q class="text-darkGrayishBlue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, amet est
+					voluptatem officiis,
+					possimus asperiores ad atque illo perspiciatis necessitatibus aut eum qui quos, molestias dicta
+					veritatis nulla ut! Amet?</q>
+
 			</blockquote>
 
-			<blockquote class="card bg-veryLightGray flex flex-col items-center justify-center text-center relative text-darkGrayishBlue space-y-8 p-4">
-				<div class="avatar -mt-[50px]">
-					<img class=" w-[100px] h-[100px]  rounded-full " src="./images/avatar-anisha.png" alt="card1-avatar">
-					<span class="text-2xl text-darkBlue mt-12">user name</span>
+			<blockquote
+				class="card bg-veryLightGray flex flex-col items-center justify-center text-center relative text-darkGrayishBlue space-y-8 p-4">
+				<div class="avatar -mt-[50px] flex flex-col gap-7">
+					<img class=" w-[100px] h-[100px]  rounded-full " src="./images/avatar-ali.png" alt="card1-avatar">
+					<span class="text-2xl text-darkBlue capitalize">ali bravo</span>
 				</div>
-			
-					<p class="text-darkGrayishBlue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, amet est voluptatem officiis,
-						possimus asperiores ad atque illo perspiciatis necessitatibus aut eum qui quos, molestias dicta
-						veritatis nulla ut! Amet?</p>
-				
+
+				<q class="text-darkGrayishBlue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, amet est
+					voluptatem officiis,
+					possimus asperiores ad atque illo perspiciatis necessitatibus aut eum qui quos, molestias dicta
+					veritatis nulla ut! Amet?</q>
+
 			</blockquote>
 
-			<blockquote class="card bg-veryLightGray flex flex-col items-center justify-center text-center relative text-darkGrayishBlue space-y-8 p-4">
-				<div class="avatar -mt-[50px]">
-					<img class=" w-[100px] h-[100px]  rounded-full " src="./images/avatar-anisha.png" alt="card1-avatar">
-					<span class="text-2xl text-darkBlue mt-12">user name</span>
+			<blockquote
+				class="card bg-veryLightGray flex flex-col items-center justify-center text-center relative text-darkGrayishBlue space-y-8 p-4">
+				<div class="avatar -mt-[50px] flex flex-col gap-7">
+					<img class=" w-[100px] h-[100px]  rounded-full " src="./images/avatar-richard.png" alt="card1-avatar">
+					<span class="text-2xl text-darkBlue  capitalize">richard watts</span>
 				</div>
-			
-					<p class="text-darkGrayishBlue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, amet est voluptatem officiis,
-						possimus asperiores ad atque illo perspiciatis necessitatibus aut eum qui quos, molestias dicta
-						veritatis nulla ut! Amet?</p>
-				
+
+				<q class="text-darkGrayishBlue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, amet est
+					voluptatem officiis,
+					possimus asperiores ad atque illo perspiciatis necessitatibus aut eum qui quos, molestias dicta
+					veritatis nulla ut! Amet?</q>
+
 			</blockquote>
 
-			
+
 		</div>
+		<a href="#started"
+			class="bg-brightRed hover:bg-brightRedLight baseline text-white text-sm p-3 px-5  rounded-full capitalize shadow-xl">
+			<span class="text-white"> get started </span>
+		</a>
 	</section>
 	<!--end testimonial -->
-</body>
 
+	<!-- start simplify -->
+	<section class="bg-brightRed sm:bg-simplify-mobile md:bg-simplify-mobile bg-no-repeat">
+		<div class="container p-6 py-11 mx-auto flex 
+		flex-col md:flex-row justify-between items-center sm:space-y-6 md:space-y-0 ">
+			<div class="text-container w-[350px]">
+				<h2 class="text-3xl text-white  sm:text-center md:text-left font-medium leading-8">Simplify how your team works
+					today</h2>
+			</div>
+			<a href="#started"
+				class="bg-white text-brightRed hover:bg-brightRedLight baseline  hover:text-white text-sm p-3 px-5  rounded-full capitalize">
+				<span> get started </span>
+			</a>
+		</div>
+	</section>
+	<!-- end simplify -->
+	<!-- start footer -->
+	<footer class="footer bg-veryDarkBlue">
+		<div
+			class="container p-6 py-10 mx-auto flex md:flex-row justify-between sm:flex-col-reverse text-gray-400 sm:gap-10 md:gap-0">
+			<div
+				class="footer-col-1 flex sm:flex-col-reverse sm:items-center sm:gap-10 md:gap-0 md:flex-col  justify-between sm:space-y-5 md:space-y-0">
+
+				<span class="block md:hidden  text-darkGrayishBlue capitalize  text-sm font-medium">copyright 2020. all
+					right reserved</span>
+
+				<div class="flex  flex-row justify-between">
+					<img src="./images/logo-footer.svg" alt="logo" class="fill-inherit">
+				</div>
+
+				<div
+					class="social-icons sm:child:scale-150 md:child:scale-100  md:child:scal-1 flex flex-row justify-between w-full">
+					<a href="#" class="social-icon">
+						<img src="./images/icon-facebook.svg" alt="facebook">
+					</a>
+					<a href="#" class="social-icon">
+						<img src="./images/icon-youtube.svg" alt="twitter">
+					</a>
+					<a href="#" class="social-icon">
+						<img src="./images/icon-twitter.svg" alt="instagram">
+					</a>
+					<a href="#" class="social-icon">
+						<img src="./images/icon-pinterest.svg" alt="linkedin">
+					</a>
+
+					<a href="#" class="social-icon">
+						<img src="./images/icon-instagram.svg" alt="linkedin">
+					</a>
+				</div>
+
+			</div>
+			<div class="footer-col-2 flex sm:flex-row  md:flex-col sm:justify-between capitalize">
+				<div class="flex   flex-col gap-4">
+					<a href="#" class="home">
+						home
+					</a>
+					<a href="#" class="pricing">
+						pricing
+					</a>
+					<a href="#" class="product">
+						product
+					</a> <a href="#" class="about us">
+						about us
+					</a>
+				</div>
+
+				<div class="flex md:hidden footer-col-3  flex-col gap-4">
+					<a href="#" class="careers">careers</a>
+					<a href="#" class="community">community</a>
+					<a href="#" class="privacy-policy">privacy policy</a>
+				</div>
+			</div>
+			<div class="hidden md:flex footer-col-3  flex-col gap-4">
+				<a href="#" class="careers">careers</a>
+				<a href="#" class="community">community</a>
+				<a href="#" class="privacy-policy">privacy policy</a>
+			</div>
+			<div class="footer-col-4 flex flex-col justify-between">
+				<div class="flex flex-row justify-center">
+					<input type="email" placeholder="Updates in your inbox..." name="" id="email"
+						class="rounded-full bg-white mr-3 text-darkGrayishBlue sm:px-7 px-4 placeholder:text-sm focus-within:outline-none">
+					<button class="bg-brightRed text-white text-sm p-3 px-5  rounded-full capitalize">
+						<span> go </span>
+					</button>
+				</div>
+				<span class="hidden md:block text-darkGrayishBlue capitalize self-end text-sm font-medium">copyright 2020.
+					all right reserved</span>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+</body>
+<script src="./index.js"></script>
 </html>
